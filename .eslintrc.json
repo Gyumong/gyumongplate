@@ -11,10 +11,12 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 11
+        "ecmaVersion": 11,
+        "sourceType": "module"
     },
     "rules": {
         "no-unused-vars":"warn",
-        "no-console":"off"
+        "no-console":"off",
+        "no-global-assign": ["error", {"exceptions": ["require"]}]
     }
 }
